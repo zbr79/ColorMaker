@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/colorButton"
+            android:layout_width="333dp"
+            android:layout_height="222dp"
+            android:layout_margin="25dp"
+            android:background="#000000"
+            tools:text="       " />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/red_switch"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Red  "
+            android:textColor="#FF0000"
+            android:textSize="10sp"
+            android:thumbTint="#FF0000"
+            android:trackTint="#FF6B6B"
+            tools:checked="true" />
+
+        <SeekBar
+            android:id="@+id/red_seekbar"
+            android:layout_width="235dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:max="255"
+            android:progressTint="#FB0000"
+            android:thumbTint="#FF0000" />
+
+        <TextView
+            android:id="@+id/red_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0.000"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/green_switch"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Green"
+            android:textColor="#4CAF50"
+            android:textSize="10sp"
+            android:thumbTint="#00FF00"
+            android:trackTint="#7DF37D"
+            tools:checked="true" />
+
+        <SeekBar
+            android:id="@+id/green_seekbar"
+            android:layout_width="235dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:max="255"
+            android:progress="0"
+            android:progressTint="#00FF00"
+            android:thumbTint="#00FF00" />
+
+        <TextView
+            android:id="@+id/green_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0.000" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/blue_switch"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:showText="false"
+            android:text="Blue "
+            android:textColor="#2196F3"
+            android:textSize="10sp"
+            android:thumbTint="#0000FF"
+            android:trackTint="#69B4FF"
+            tools:checked="true" />
+
+        <SeekBar
+            android:id="@+id/blue_seekbar"
+            android:layout_width="235dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:max="255"
+            android:progress="0"
+            android:progressTint="#0000FF"
+            android:thumbTint="#0000FF" />
+
+        <TextView
+            android:id="@+id/blue_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0.000" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:text="Reset" />
+</LinearLayout>
+
+
+
+
+
+
